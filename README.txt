@@ -6,6 +6,7 @@ This is a simple Python program that converts any word input by the user into it
 
 - Converts each letter of a word into its phonetic code (e.g., "Hello" → `['Hotel', 'Echo', 'Lima', 'Lima', 'Oscar']`)
 - Keeps running until the user types `exit`
+- Shows an error message and re-prompts the user if the input contains non-letter characters
 
 ## Requirements
 
