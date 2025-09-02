@@ -16,7 +16,10 @@ while True:
     word_input = input("Enter a word: ").upper()
     if word_input == "EXIT":
         break
-
-    result = [alphabet_dictionary[letter] for letter in word_input]
-    print(result)
+    try:
+        result = [alphabet_dictionary[letter] for letter in word_input]
+    except KeyError:
+        print("Sorry, only letter in the alphabet please.")
+    else:
+        print(result)
 
